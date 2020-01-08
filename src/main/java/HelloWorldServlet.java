@@ -8,12 +8,17 @@ import java.io.PrintWriter;
 
 //make sure you put hello-world after the / in the local host link!
 @WebServlet(name = "HelloWorldServlet", urlPatterns = "/hello-world")
+    //super class is the HttpServlet
 public class HelloWorldServlet extends HttpServlet {
 
     @Override
+    //overriding from parent class (params are request, response)
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
         response.setContentType("text/html");
-        PrintWriter out = response.getWriter();
-        out.println("<h1>Hello, World!</h1>");
+
+        //make the response (printWriter)
+        PrintWriter writer = response.getWriter();
+        writer.println("<h1>Hello, World!</h1>");
     }
 }

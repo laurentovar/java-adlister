@@ -8,9 +8,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 //page that goes up one every time the page is viewed
-@WebServlet(name = "CountServlet", urlPatterns = "/page-counter")
+@WebServlet(name = "PageCounterServlet", urlPatterns = "/page-counter")
 
-public class PageCounter extends HttpServlet {
+public class PageCounterServlet extends HttpServlet {
 
     // set counter
     private static int counter = 0;

@@ -8,9 +8,17 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
-    <title>Title</title>
+    <title>Profile page</title>
 </head>
 <body>
+    <h2>
+        <%
+            String x = session.getAttribute("username").toString();
+            System.out.println("Hello " + x);
+        %>
+    </h2>
+
+
 
 </body>
 </html>

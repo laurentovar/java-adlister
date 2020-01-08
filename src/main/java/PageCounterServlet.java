@@ -8,13 +8,15 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 //page that goes up one every time the page is viewed
-@WebServlet(name = "PageCounterServlet", urlPatterns = "/page-counter")
+@WebServlet(urlPatterns = "/page-counter")
 
 public class PageCounterServlet extends HttpServlet {
 
     // set counter
     private static int counter = 0;
 
+    //get the post
+    @Override
     protected void doGet(HttpServletRequest servReq, HttpServletResponse serResp) throws ServletException, IOException {
         String reset = servReq.getParameter("reset");
 

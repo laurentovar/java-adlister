@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: laurentovar
-  Date: 1/7/20
-  Time: 2:04 PM
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -16,8 +9,10 @@
 <%--    String password = request.getParameter("password");--%>
 <%--%>--%>
 
+<%--<%@ include file="partials/navbar.jsp"%>--%>
+<jsp:include page="partials/navbar.jsp" />
 <h2>
-    welcome
+    Welcome Admin
 <%--    <%--%>
 <%--        String x = session.getAttribute("username").toString();--%>
 <%--        System.out.println("Hello " + x);--%>

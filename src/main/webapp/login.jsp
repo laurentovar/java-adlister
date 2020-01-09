@@ -5,6 +5,7 @@
     -Inside of login.jsp write some code to check the submmitted values.
     -If the username submitted is "admin", and the password is "password",
         redirect the user to the profile page; otherwise, redirect back to the login form.--%>
+
 <%@page session="false" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1" pageEncoding="ISO-8859-1" %>

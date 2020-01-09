@@ -26,10 +26,10 @@
                     <a class="nav-link" href="#">Features</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Lemons</a>
+                    <a class="nav-link" href="#">News</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    <a class="nav-link " href="#" tabindex="-1" aria-disabled="true">About</a>
                 </li>
                 <c:if test="${not empty loggedInUser}">
                 <li class="nav-item">

@@ -11,12 +11,22 @@
     <title>Profile page</title>
 </head>
 <body>
-    <h2>
-        <%
-            String x = session.getAttribute("username").toString();
-            System.out.println("Hello " + x);
-        %>
-    </h2>
+<%--<%--%>
+<%--    String name = request.getParameter("name");--%>
+<%--    String password = request.getParameter("password");--%>
+<%--%>--%>
+
+<h2>
+    welcome
+<%--    <%--%>
+<%--        String x = session.getAttribute("username").toString();--%>
+<%--        System.out.println("Hello " + x);--%>
+<%--    %>--%>
+</h2>
+
+
+
+
 
 
 

@@ -18,7 +18,7 @@
 <body>
 <%--<%@ include file="partials/navbar.jsp"%>--%>
 <jsp:include page="partials/navbar.jsp" />
-Sample login Example (try with username as "admin" and password as "admin" without quart ) <br> <br>
+Sample login Example: Try with username as "admin" and password as "password" <br> <br>
 
 <form action="#" method="post">
     Enter username :<input type="text" name="username"> <br>

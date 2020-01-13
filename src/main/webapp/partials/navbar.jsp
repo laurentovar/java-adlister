@@ -6,7 +6,12 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
             <c:if test="${sessionScope.user == null}">
-                <li><a href="login">Login</a></li>
+                <li>
+                    <form action="login" method="get">
+                        <button>Login</button>
+                    </form>
+
+                </li>
             </c:if>
             <c:if test="${sessionScope.user != null}">
                 <li>

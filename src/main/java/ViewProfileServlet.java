@@ -9,11 +9,13 @@ import java.io.IOException;
 public class ViewProfileServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-
+        //check to see if the user has something
         if(request.getSession().getAttribute("user") == null){
+            //if it doesnt have anything they need to login
             response.sendRedirect("/login");
-
-        } else{
+        }
+        //they are logged in so send to the profile
+        else {
             request.getRequestDispatcher("/WEB-INF/profile.jsp").forward(request, response);
 
         }

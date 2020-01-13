@@ -28,7 +28,8 @@ public class LoginServlet extends HttpServlet {
 
         //if the login is an admin redirect to the profile page
         if (validAttempt) {
-            request.getSession().setAttribute("user",username);
+            //key is user and username is the value
+            request.getSession().setAttribute("user", username);
             response.sendRedirect("/profile");
         }
         //redirect to login again

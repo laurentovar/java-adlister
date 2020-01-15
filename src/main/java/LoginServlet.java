@@ -10,6 +10,7 @@ public class LoginServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         //if the there is something in the user direct to the profile
+        //
         if(request.getSession().getAttribute("user") != null){
             response.sendRedirect("/profile");
         }

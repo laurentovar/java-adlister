@@ -16,7 +16,8 @@
 <%--    <%--%>
 <%--        String x = session.getAttribute("username").toString();--%>
 <%--        System.out.println("Hello " + x);--%>
-<%--    %>--%>
+<%--  //  %>--%>
+
 </h2>
 
 

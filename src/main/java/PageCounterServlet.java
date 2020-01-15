@@ -13,6 +13,7 @@ import java.io.PrintWriter;
 public class PageCounterServlet extends HttpServlet {
 
     // set counter
+    //
     private static int counter = 0;
 
     //get the post
